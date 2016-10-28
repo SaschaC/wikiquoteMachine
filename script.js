@@ -200,7 +200,7 @@ var update_tweet = function(quote) {
 	if (quote.language != "English"&&quote.language != "Kannada"){
 		tweet += " ("+quote.language+" proverb) "+"- "+quote.english;
 	}
-	var tweetHref = "https://twitter.com/share"+"?text="+encodeURIComponent(tweet);
+	var tweetHref = "https://twitter.com/share"+"?text="+encodeURIComponent(tweet)+"&url=false";
 	return tweetHref;
 }
 
