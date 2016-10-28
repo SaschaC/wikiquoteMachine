@@ -50,7 +50,6 @@ $(document).ready(function() {
 					/*intitialize screen*/
 					var index = Math.floor(Math.random() * quotes.length);
 					newQuote = quotes[index];
-					newQuote = normalize_quote(newQuote);
 					display_quote(newQuote);
 					var tweetHref = update_tweet(newQuote);
 					var gtranslateHref = update_gtranslate(newQuote.quote);
@@ -81,7 +80,6 @@ var update_buttons = function(quotes,tweetHref,gtranslateHref){
 		$('.content').fadeOut('slow', function(){
 			var index = Math.floor(Math.random() * quotes.length);
 			newQuote = quotes[index];
-			newQuote = normalize_quote(newQuote);
 			display_quote(newQuote);
 			tweetHref = update_tweet(newQuote);
 			gtranslateHref = update_gtranslate(newQuote.quote);
@@ -130,7 +128,8 @@ var normalize_line = function(line,language){
 	line = line.replace(/^(English\s+equivalent:\s+|Meaning:\s+|Translation:\s+|Transliteration\s*.*:\s+)*(\\*"|\\u201d)([^"]+)(\\*"$|\\u201d$)/,"$1$3");
 	/* if there is for some reason a single " (e.g., a typo), remove it */
 	if (line.match(/"/g)&&line.match(/"/g).length == 1) {line = line.replace(/"/,'');}
-
+	/* display html code correctly, e.g., &mdash; */
+	line = transcript_html(line);
 	return line;
 }
 
@@ -182,14 +181,11 @@ var create_quote = function(chunk,language, pageID) {
 	return quote;
 }
 
-var normalize_quote = function(quote){
-	/*html code */
-	for (var property in quote) {
+var transcript_html = function(line){
 		var txt = document.createElement("textarea");
-		txt.innerHTML = quote[property];
-		quote[property] = txt.value;
-	};	
-	return quote;
+		txt.innerHTML = line;
+		line = txt.value;
+		return line;
 }
 
 var display_quote = function(quote){	
