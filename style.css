@@ -1,0 +1,123 @@
+
+html {
+font-family: 'Cormorant', serif;
+  font-size: 10px;
+  background-color: hsl(0, 62%, 95%);
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+   background-image: radial-gradient(ellipse farthest-corner at center, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.4) 70%,#FFFFFF 100%);  
+}	
+
+#button-container{
+	overflow: auto; 
+	width: 100%;
+}
+	
+.box{
+	color:white;
+	width: 600px;
+	margin: 10% auto;
+	padding:2%;
+	background-color: rgba(0, 0, 0, 0.9);
+	border: none;
+	border-radius: 1.5rem;
+}
+
+.content{
+	-webkit-transition: color 1s ease-in-out;
+  -moz-transition: color 0.5s ease-in-out;
+  -ms-transition: color 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out;
+	color:hsl(0, 62%, 95%);
+}
+#quote{
+	margin-bottom:1rem;
+	font-size:3rem;
+	line-height:1;
+	text-align:center;
+}
+
+#transliteration{
+	
+	margin-top:1rem;
+	word-spacing:5px;
+	text-align:center;
+	font-size:1.6rem;
+}
+
+#english,#language{
+		font-style:italic;
+		font-size:2rem;
+}
+
+button{
+		 -webkit-transition: background-color 1s ease-in-out;
+  -moz-transition: background-color 1s ease-in-out;
+  -ms-transition: background-color 1s ease-in-out;
+  -o-transition: background-color 1s ease-in-out;
+  transition: background-color 1s ease-in-out;
+	filter: opacity(70%);
+		line-height:2.5;
+	border-radius: 10px;
+
+		background-color: hsl(0, 62%, 95%);
+  border: none;
+display:inline-block;	
+	}
+
+
+button.tweet{
+	float:left;
+	height:36px;
+	width:43px;
+	margin-right:0.8rem;
+	background-image:url("tweet_black_small.png") ;
+	background-repeat:no-repeat;
+	background-position:center;	
+
+}
+
+button.gtranslate{
+
+	float:left;
+	height:36px;
+	width:43px;
+	background-image:url("Google_Translate_Icon_small.png") ;
+	background-repeat:no-repeat;
+	background-position:center;	
+
+}
+
+
+button.getMessage{
+font-family: 'Raleway', sans-serif;
+float:right;	
+	text-align:center;
+	width: 150px;
+  font-size: 1.5rem;
+}
+	
+
+button:focus, button:hover {
+  outline:none;
+}
+
+button:hover {
+ filter: opacity(50%);
+}
+
+button:active {
+ filter: opacity(30%);
+}
+
+button:disabled{
+	filter:opacity(10%);
+}
+
+
+
+
+

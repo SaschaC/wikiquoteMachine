@@ -1,0 +1,33 @@
+js
+	Fehlermeldung
+	quote when loading page
+	code cleaning
+	Meaning: fragezeichen
+	Color-uebergaenge
+	orchestrate
+	tweet
+	
+	Strings:
+		html entities in allen Quote properties
+		regular expressions
+		ertse ORIGINALE zeile: transliteration wenn kursiv	
+		Filtern von Quotes mit unerwarteten Sonderzeichen
+			quotes fuer alternative zitate; quotes innerhalb von zitaten
+		ungueltige zitate (z.B. Ueberschriften)\
+		"Transliteration"
+		remove citations
+		look for special characters (e.g., *, **)
+		translation/equivalent
+		"In prosperity let us most carefully avoid pride, disdain, and arrogance." - onlyy display transliteration for non-english
+		single quotes in words
+		quote lines seem to be capped
+css
+	fonts
+	colors
+	shape/button
+	zeilenabstand transliteration
+	button: transparencys
+	responsiveness, positioning
+html
+	twitter link
+	
