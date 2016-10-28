@@ -74,7 +74,7 @@ button.tweet{
 	height:36px;
 	width:43px;
 	margin-right:0.8rem;
-	background-image:url("tweet_black_small.png") ;
+	background-image:url("https://cloud.githubusercontent.com/assets/9592741/19823895/b9343fb4-9d6b-11e6-905e-53b6ef99c715.png") ;
 	background-repeat:no-repeat;
 	background-position:center;	
 
@@ -85,7 +85,7 @@ button.gtranslate{
 	float:left;
 	height:36px;
 	width:43px;
-	background-image:url("Google_Translate_Icon_small.png") ;
+	background-image:url("https://cloud.githubusercontent.com/assets/9592741/19823899/beee5e80-9d6b-11e6-93e8-80aeca4d3e1c.png") ;
 	background-repeat:no-repeat;
 	background-position:center;	
 
